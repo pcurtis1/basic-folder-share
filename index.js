@@ -48,5 +48,3 @@ app.get('/',(req,res) => {
 
 app.use(serveStatic(process.env.SHARED_FOLDER, { 'index': false, 'setHeaders': setHeaders }))
 app.listen(parseInt(process.env.PORT || "3000"),'0.0.0.0')
-
-// http://cs.petercurtis.id.au:3000/
